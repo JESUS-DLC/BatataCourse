@@ -1,0 +1,159 @@
+/*
+*1. Posicionamiento
+*2. Modelo de Caja (Box Model)
+*3. Tipografia
+*4. Visuales
+*5. Otros
+*/
+
+:root{
+    /* * colors */
+    --color-primary: #f7931a;
+    --color-primary-soft: #ffe9d5;
+    --color-secondary: #1a9af7;
+    --color-secondary-soft: #e7f5ff;
+    --color-dark-warm: #201e1c;
+    --color-dark: #282623;
+    --color-ligt-darker: #bababa;
+    --color-background: #faf8f7;
+    --color-light: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* !!HEADER */
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;  
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    /* centrar elemento que tenga display:flex */
+    align-self: center;
+}
+
+.header__title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__title h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-light);
+}
+
+.header__title p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--color-primary-soft);
+}
+
+.header__title .header__button{
+    position: absolute;
+    left: calc(50% - 115px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 230px;
+    height: 48px;
+    background-color: var(--color-background);
+    /* * Shadow */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.header__button span{       
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('/assets/icons/down-arrow.svg');
+}
+
+/* !!MAIN */
+
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--color-background);
+}
+
+/* EXCHANGE SECCION  */
+
+.exchange{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exchange .exchange__background{
+    width: 200px;
+    height: 200px;
+    margin:  0 auto;
+    margin-bottom: 50px;
+    background-image: url('/assets/img/Bitcoin.svg');
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.exchange__title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exchange__title h2{
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-dark);
+}
+
+.exchange__title p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
